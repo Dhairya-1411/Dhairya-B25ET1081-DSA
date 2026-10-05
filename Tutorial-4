@@ -1,0 +1,74 @@
+#include<stdio.h>
+
+
+typedef struct student
+{
+    int roll;
+    char name[10];
+    float sgpa;
+} student;
+struct student st[100];
+void create(student st[], int N);
+void display(student st[], int N);
+int main()
+{
+    int N;
+    //struct student st[100];
+    printf("Enter number of students for data");
+    scanf("%d",&N);
+    create(st,N);
+    display(st,N);
+ 
+}
+void create(student st[], int N)
+
+
+{
+ for(int i=0;i<=N;i++)
+ {
+    printf("Enter Roll No. \n Name \n SGPA");
+    scanf("%d%c%f",&st[i].roll,st[i].name,&st[i].sgpa);
+ }
+}
+void display(student st[], int N)
+ {
+    for(int i=0;i<=N;i++)
+    {
+        printf("Roll=%d \n Name=%c \n SGPA=%f",&st[i].roll,st[i].name,&st[i].sgpa);
+    }
+ }
+
+
+
+
+#include <stdio.h>
+void swap(int *a, int *b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+int main()
+{
+    int a[6], i, j, min;
+    printf("Enter 6 elements: ");
+    for(i = 0; i < 6; i++)
+        scanf("%d", &a[i]);
+    for(i = 0; i < 6 - 1; i++)
+    {
+        min = i;
+        for(j = i + 1; j < 6; j++)
+        {
+            if(a[j] < a[min])
+            {
+                min = j;
+            }
+        }
+        swap(&a[i], &a[min]);
+        printf("\n");
+    }
+    printf("Sorted array: ");
+    for(i = 0; i < 6; i++)
+        printf("%d ", a[i]);
+    return 0;
+}
