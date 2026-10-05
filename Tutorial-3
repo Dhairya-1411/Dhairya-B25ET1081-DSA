@@ -34,3 +34,36 @@ int main()
 
     return 0;
 }
+
+
+#include <stdio.h>
+void swap(int *a, int *b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+int main()
+{
+    int a[6], i, j, min;
+    printf("Enter 6 elements: ");
+    for(i = 0; i < 6; i++)
+        scanf("%d", &a[i]);
+    for(i = 0; i < 6 - 1; i++)
+    {
+        min = i;
+        for(j = i + 1; j < 6; j++)
+        {
+            if(a[j] < a[min])
+            {
+                min = j;
+            }
+        }
+        swap(&a[i], &a[min]);
+        printf("\n");
+    }
+    printf("Sorted array: ");
+    for(i = 0; i < 6; i++)
+        printf("%d ", a[i]);
+    return 0;
+}
