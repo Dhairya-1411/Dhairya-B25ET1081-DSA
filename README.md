@@ -20,3 +20,6 @@ Tutorial-5
 <img width="258" height="274" alt="image" src="https://github.com/user-attachments/assets/7d3c1780-f23c-4100-be02-5cea2b023163" />
 <img width="472" height="755" alt="image" src="https://github.com/user-attachments/assets/7cc32069-d5e9-4122-86c5-2ff0f79f173f" />
 <img width="300" height="278" alt="image" src="https://github.com/user-attachments/assets/756afa18-2fcd-427a-92c0-a6ab0833e0d6" />
+
+Tutorial-6
+<img width="322" height="285" alt="image" src="https://github.com/user-attachments/assets/89edec2e-77c4-4ac8-afd7-7a4cddb0ada7" />
